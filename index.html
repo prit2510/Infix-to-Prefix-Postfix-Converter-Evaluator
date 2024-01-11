@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utill.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <form action="onclick"></form> -->
+    <nav class="center-text">
+      <ul>
+          <h1 class="center-text">Infix Calculater</h1>
+          <p class="data">Infix to Prefix,Postfix-Calculeter&Evaluator</p>
+      </ul>
+  </nav>
+  <main>
+    <div class="box">
+        <input type="text" name="input" id="inp" placeholder="enter your equation"><br>
+        <span>
+        <label>
+            <input type="radio" name="operation" value="prefix" id="prefixRadio"> Prefix
+          </label></span>
+        <span>
+          <label>
+            <input type="radio" name="operation" value="postfix" id="postfixRadio"> Postfix
+          </label></span>
+        <button id="btn">Evaluate</button><br>
+        <input type="text" name="output" id="out">
+        <div>
+          <h1>Postfix Notation:</h1>
+          <b>Steps to Convert Infix to Postfix and Evaluate:</b>
+          <ol>
+            <li><p>Initialize an Empty Stack:</p></li>
+            <li><p>Scan the Infix Expression from Left to Right:</p></li>
+            <li><p>Process Each Element in the Infix Expression:</p></li>
+            <li><p>Handle Parentheses:</p></li>
+            <li><p>Pop Remaining Operators from the Stack</p></li>
+            <li><p>Resulting Postfix Expression</p></li>
+            <li><p>Evaluate the Postfix Expression Using a Stack:</p></li>
+          </ol>
+          <h1>Prefix Notation:</h1>
+          <b>Steps to Convert Infix to Prefix and Evaluate:</b>
+          <ol>
+            <li><p>Reverse the Infix Expression:</p></li>
+            <li><p>Modify Parentheses:</p></li>
+            <li><p>Convert to Postfix:</p></li>
+            <li><p>Reverse the Postfix Expression:</p></li>
+            <li><p>Evaluate the Prefix Expression Using a Stack:</p></li>
+          </ol>
+        </div>
+      
+    </div>
+  </main>
+  <footer class="center-text">
+    <p>by prit &copy;</p>
+</footer>  
+<script src="script.js"></script>
+</body>
+</html>
